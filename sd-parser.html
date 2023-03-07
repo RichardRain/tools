@@ -16,8 +16,13 @@
 		</header>
 		<main>
 			<article>
-				<input type="text" name="parser" id="parser" />
-				<button type="submit">Parse!</button>
+				<textarea name="parser" id="parser" cols="30" rows="10"></textarea>
+				<button onclick="parseText()">Parse!</button>
+				<button onclick="clearText()">Clear!</button>
+			</article>
+			<article>
+				<textarea name="done" id="done" cols="30" rows="10"></textarea>
+				<button onclick="copyText()" , id="copyButton">Copy!</button>
 			</article>
 		</main>
 		<footer>
